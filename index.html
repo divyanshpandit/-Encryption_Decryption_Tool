@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Encryption/Decryption Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Encryption & Decryption Tool</h1>
+
+    <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+
+    <select id="methodSelect">
+      <option value="base64">Base64 Encode/Decode</option>
+      <option value="caesar">Caesar Cipher (+3)</option>
+      <option value="xor">XOR Cipher (Key: 42)</option>
+    </select>
+
+    <div class="buttons">
+      <button onclick="encrypt()">Encrypt</button>
+      <button onclick="decrypt()">Decrypt</button>
+    </div>
+
+    <h3>Output:</h3>
+    <textarea id="outputText" readonly placeholder="Output will appear here..."></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
